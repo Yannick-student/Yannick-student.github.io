@@ -3,51 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Division Themed Profile</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Yannick Bouwhuis | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="hero">
+        <div class="container">
+            <img src="pfp.png" alt="Yannick Bouwhuis" class="profile-pic">
+            <h1>Yannick Bouwhuis</h1>
+            <p class="tagline">"Hello world :D"</p>
+        </div>
+    </header>
 
-    <!-- Left Profile Card -->
-    <div class="item-frame profile-card">
-        <div class="content">
-            <img src="pfp.png" alt="Profile Picture" class="profile-pic">
-            <h2>Agent X</h2>
-            <p>Division Operative</p>
-            <div class="status-bar">
-                <div class="status-fill" style="width: 75%;"></div>
+    <nav class="navbar">
+        <a href="#about">About Me</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm an 18-year-old Software Engineering student from Zwolle, passionate about coding and building cool stuff! 🚀</p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Software Engineering Student</h3>
+                    <p>Currently studying at [Your University/School Name]. Specializing in full-stack development and modern web technologies.</p>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Right Cards Wrapper -->
-    <div class="right-wrapper">
-
-        <!-- Jobs Card -->
-        <div class="item-frame jobs-card">
-            <div class="content">
-                <h3><span class="icon">⚙️</span> Active Assignments</h3>
-                <ul>
-                    <li>Recon Urban Area</li>
-                    <li>Secure Outpost Bravo</li>
-                    <li>Extract Intel from DZ</li>
-                </ul>
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill">
+                <p>HTML</p>
+                <div class="progress-bar"><div style="width: 90%"></div></div>
+            </div>
+            <div class="skill">
+                <p>CSS</p>
+                <div class="progress-bar"><div style="width: 85%"></div></div>
+            </div>
+            <div class="skill">
+                <p>JavaScript</p>
+                <div class="progress-bar"><div style="width: 80%"></div></div>
             </div>
         </div>
+    </section>
 
-        <!-- GitHub Projects Card -->
-        <div class="item-frame projects-card">
-            <div class="content">
-                <h3><span class="icon">💻</span> GitHub Projects</h3>
-                <ul>
-                    <li>Division Tracker <a href="#" class="button">View</a></li>
-                    <li>Tactical Map Overlay <a href="#" class="button">View</a></li>
-                    <li>Loot Analyzer <a href="#" class="button">View</a></li>
-                </ul>
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>A cool project description goes here.</p>
+                <a href="#" class="btn">View on GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Another interesting project description goes here.</p>
+                <a href="#" class="btn">View on GitHub</a>
             </div>
         </div>
+    </section>
 
-    </div>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="socials">
+                <a href="#" class="btn insta">Instagram</a>
+                <a href="#" class="btn discord">Discord</a>
+                <a href="mailto:yourmail@example.com" class="btn mail">Email Me</a>
+            </div>
+        </div>
+    </section>
 
+    <footer>
+        <p>© 2025 Yannick Bouwhuis. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
