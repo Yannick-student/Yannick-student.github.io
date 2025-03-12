@@ -1,33 +1,61 @@
 body {
+	background-color: #0b132b;
+	color: #6fffe9;
 	font-family: Arial, sans-serif;
-	line-height: 1.6;
+	display: flex;
+	height: 100vh;
 	margin: 0;
-	padding: 0;
-	background-color: #f0f2f5;
-	color: #333;
 }
 
-header {
-	background-color: #4CAF50;
-	color: #fff;
-	text-align: center;
-	padding: 2rem 0;
+.container {
+	display: flex;
+	width: 100%;
+	padding: 20px;
+	gap: 20px;
 }
 
-section {
-	padding: 2rem;
-	max-width: 800px;
-	margin: 2rem auto;
-	background-color: #fff;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.personal-info {
+	background-color: #1c2541;
+	padding: 20px;
 	border-radius: 10px;
+	width: 30%;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-a {
-	color: #4CAF50;
-	text-decoration: none;
+	.personal-info img {
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		border: 3px solid #5bc0be;
+		margin-bottom: 10px;
+	}
+
+.projects-container {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	gap: 20px;
 }
 
-	a:hover {
-		text-decoration: underline;
+.project-section {
+	background-color: #3a506b;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.project-buttons button {
+	background-color: #5bc0be;
+	border: none;
+	color: #0b132b;
+	padding: 10px 20px;
+	margin: 5px 0;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 100%;
+	text-align: left;
+}
+
+	.project-buttons button:hover {
+		background-color: #6fffe9;
 	}

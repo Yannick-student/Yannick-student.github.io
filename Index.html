@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yannick - Portfolio</title>
+    <title>Portfolio - Yannick</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Software Developer | Problem Solver | Tech Enthusiast</p>
-    </header>
+    <div class="container">
+        <div class="personal-info">
+            <img src="pfp.png" alt="Profile Picture">
+            <h1>Yannick Bouwhuis</h1>
+            <p>Student in software engineering | Windesheim 2027</p>
+            <p>Email: bouwhuisyannick@gmail.com</p>
+        </div>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a passionate developer with experience in C#, ASP.NET, and more...</p>
-    </section>
+        <div class="projects-container">
+            <div class="project-section">
+                <h2>Finished Projects</h2>
+                <ul>
+                    <li>BrainFart - Collaborative Whiteboard</li>
+                    <li>ECHO - Division-Themed Chat App</li>
+                    <li>Memory Game - College Project</li>
+                </ul>
+            </div>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="#">BrainFart - Collaborative Whiteboard</a></li>
-            <li><a href="#">ECHO - Division-Themed Chat App</a></li>
-            <li><a href="#">Memory Game - College Project</a></li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-    </section>
-
-    <script src="script.js"></script>
+            <div class="project-section">
+                <h2>Live Projects</h2>
+                <div class="project-buttons">
+                    <button onclick="window.location.href='#'">BrainFart Live</button>
+                    <button onclick="window.location.href='#'">ECHO Live</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
