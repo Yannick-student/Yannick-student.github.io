@@ -1,2 +1,2 @@
 # Yannick-student.github.io
-Personal CV pite
+Personal CV site
