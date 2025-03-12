@@ -3,36 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Yannick</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Division Themed Profile</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="personal-info">
-            <img src="pfp.png" alt="Profile Picture">
-            <h1>Yannick Bouwhuis</h1>
-            <p>Student in software engineering | Windesheim 2027</p>
-            <p>Email: bouwhuisyannick@gmail.com</p>
-        </div>
 
-        <div class="projects-container">
-            <div class="project-section">
-                <h2>Finished Projects</h2>
-                <ul>
-                    <li>BrainFart - Collaborative Whiteboard</li>
-                    <li>ECHO - Division-Themed Chat App</li>
-                    <li>Memory Game - College Project</li>
-                </ul>
-            </div>
-
-            <div class="project-section">
-                <h2>Live Projects</h2>
-                <div class="project-buttons">
-                    <button onclick="window.location.href='#'">BrainFart Live</button>
-                    <button onclick="window.location.href='#'">ECHO Live</button>
-                </div>
+    <!-- Left Profile Card -->
+    <div class="item-frame profile-card">
+        <div class="content">
+            <img src="pfp.png" alt="Profile Picture" class="profile-pic">
+            <h2>Agent X</h2>
+            <p>Division Operative</p>
+            <div class="status-bar">
+                <div class="status-fill" style="width: 75%;"></div>
             </div>
         </div>
     </div>
+
+    <!-- Right Cards Wrapper -->
+    <div class="right-wrapper">
+
+        <!-- Jobs Card -->
+        <div class="item-frame jobs-card">
+            <div class="content">
+                <h3><span class="icon">⚙️</span> Active Assignments</h3>
+                <ul>
+                    <li>Recon Urban Area</li>
+                    <li>Secure Outpost Bravo</li>
+                    <li>Extract Intel from DZ</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- GitHub Projects Card -->
+        <div class="item-frame projects-card">
+            <div class="content">
+                <h3><span class="icon">💻</span> GitHub Projects</h3>
+                <ul>
+                    <li>Division Tracker <a href="#" class="button">View</a></li>
+                    <li>Tactical Map Overlay <a href="#" class="button">View</a></li>
+                    <li>Loot Analyzer <a href="#" class="button">View</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
 </body>
 </html>
