@@ -1,4 +1,4 @@
-// Smooth Scroll Effect
+// Enhanced Smooth Scroll Effect
 document.querySelectorAll('.navbar a').forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault();
@@ -12,7 +12,7 @@ document.querySelectorAll('.navbar a').forEach(link => {
     });
 });
 
-// Progress Bar Animation
+// Skills Animation Logic
 window.addEventListener('scroll', () => {
     const skillBars = document.querySelectorAll('.progress-bar div');
     skillBars.forEach(bar => {

@@ -1,3 +1,8 @@
+/* Gradient Definition */
+:root {
+	--primary-gradient: linear-gradient(135deg, #6D28D9, #3AC9DB); /* Purple to Turquoise */
+}
+
 body {
 	margin: 0;
 	font-family: 'Arial', sans-serif;
@@ -6,17 +11,16 @@ body {
 	line-height: 1.6;
 }
 
-.container {
-	width: 90%;
-	max-width: 1100px;
-	margin: 0 auto;
-	padding: 4rem 0;
-}
-
+/* Parallax Hero Section */
 .hero {
 	text-align: center;
 	padding: 6rem 0;
-	background: linear-gradient(135deg, #6D28D9, #8B5CF6);
+	background: var(--primary-gradient);
+	background-image: url('bg.jpg');
+	background-size: cover;
+	background-attachment: fixed; /* Parallax Effect */
+	background-position: center;
+	background-blend-mode: overlay;
 }
 
 .profile-pic {
@@ -28,6 +32,9 @@ body {
 
 h1 {
 	font-size: 3rem;
+	background: var(--primary-gradient);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; /* Cool gradient text */
 	margin: 0;
 }
 
@@ -36,6 +43,7 @@ h1 {
 	opacity: 0.8;
 }
 
+/* Navigation Bar */
 .navbar {
 	display: flex;
 	justify-content: center;
@@ -45,26 +53,25 @@ h1 {
 }
 
 	.navbar a {
-		color: #8B5CF6;
+		color: #3AC9DB;
 		text-decoration: none;
 		font-weight: bold;
 		transition: color 0.3s ease;
 	}
 
 		.navbar a:hover {
-			color: #A78BFA;
+			color: #8B5CF6;
 		}
-
-section {
-	border-bottom: 2px solid #222;
-}
 
 h2 {
 	text-align: center;
 	font-size: 2.5rem;
-	color: #A78BFA;
+	background: var(--primary-gradient);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
+/* Skills with Gradient Progress Bars */
 .skill {
 	margin: 1rem 0;
 }
@@ -78,34 +85,39 @@ h2 {
 
 	.progress-bar div {
 		height: 100%;
-		background: #A78BFA;
+		background: var(--primary-gradient);
 	}
 
+/* Project Cards */
 .project-card {
 	background: #222;
 	padding: 1.5rem;
 	border-radius: 10px;
 	margin-bottom: 1rem;
 	text-align: center;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
 }
 
 .btn {
 	display: inline-block;
-	background: #8B5CF6;
+	background: var(--primary-gradient);
 	color: #fff;
 	padding: 0.5rem 1rem;
 	border-radius: 5px;
 	text-decoration: none;
 	margin-top: 1rem;
-	transition: background 0.3s;
+	transition: transform 0.2s, background 0.3s;
 }
 
 	.btn:hover {
-		background: #A78BFA;
+		background: linear-gradient(135deg, #3AC9DB, #6D28D9); /* Gradient Reverse Effect */
+		transform: scale(1.05);
 	}
 
+/* Footer */
 footer {
 	text-align: center;
 	background: #1E1E1E;
 	padding: 1rem 0;
+	color: #8B5CF6;
 }
