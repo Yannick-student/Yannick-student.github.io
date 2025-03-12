@@ -1,7 +1,0 @@
-theme: null
-exclude:
-  - node_modules
-  - README.md
-  - script.js
-  - style.css
-  - .gitignore
