@@ -1,2 +1,7 @@
-title: Yannick's homepage
-description: Bookmark this to keep an eye on my project updates!
+theme: null
+exclude:
+  - node_modules
+  - README.md
+  - script.js
+  - style.css
+  - .gitignore
