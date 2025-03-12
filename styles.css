@@ -3,13 +3,58 @@
 	--primary-gradient: linear-gradient(135deg, #6D28D9, #3AC9DB); /* Purple to Turquoise */
 }
 
+
 body {
 	margin: 0;
-	font-family: 'Arial', sans-serif;
+	/*	font-family: 'Arial', sans-serif;*/
+	font-family: 'Poppins', sans-serif;
 	background-color: #121212;
 	color: #fff;
 	line-height: 1.6;
 }
+
+/* Loading Screen */
+#loading-screen {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background-color: #121212;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 9999; /* Ensures it’s always on top */
+	opacity: 1;
+	visibility: visible;
+	transition: opacity 0.5s ease, visibility 0.5s;
+}
+
+.loader {
+	border: 6px solid rgba(255, 255, 255, 0.2);
+	border-top: 6px solid #3AC9DB;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	animation: spin 1s linear infinite;
+	margin-bottom: 1rem;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+#loading-screen.hidden {
+	opacity: 0;
+	visibility: hidden;
+}
+
 
 /* Parallax Hero Section */
 .hero {
@@ -24,24 +69,52 @@ body {
 }
 
 .profile-pic {
-	width: 150px;
+	width: 280px;
 	border-radius: 50%;
-	border: 4px solid #fff;
-	margin-bottom: 1rem;
+	border: 4px solid rgba(255, 255, 255, 0.3); /* Frosted glass border */
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5); /* Depth for that glass look */
+	backdrop-filter: blur(15px);
+	-webkit-backdrop-filter: blur(15px); /* Safari support */
+	transition: transform 0.3s ease; /* Subtle hover effect */
 }
 
-h1 {
-	font-size: 3rem;
-	background: var(--primary-gradient);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent; /* Cool gradient text */
-	margin: 0;
+
+.hero-title {
+	width: 100%; /* Full-width layout */
+	max-width: 100vw; /* Prevents overflow issues */
+	padding: 1.5rem 0; /* Vertical padding only */
+	border-radius: 0; /* Remove rounded corners for a sleek look */
+	/* Glassmorphism Effect */
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-top: 2px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+	/* Text Styling */
+	color: rgba(255, 255, 255, 0.85);
+	text-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+	text-align: center; /* Ensures content stays centered */
+	margin-top: 2rem; /* Adds space below the profile picture */
 }
 
-.tagline {
-	font-style: italic;
-	opacity: 0.8;
-}
+	/* Main Name */
+	.hero-title h1 {
+		font-size: 4.5rem;
+		font-weight: 700;
+		margin: 0;
+	}
+
+	/* Tagline */
+	.hero-title .tagline {
+		font-size: 1.8rem;
+		font-weight: 600;
+		margin-top: 0.5rem;
+		padding-top: 0.5rem;
+	}
+
+
+
 
 /* Navigation Bar */
 .navbar {
@@ -98,11 +171,12 @@ h2 {
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
 }
 
+/* Buttons - Clean, Solid Color */
 .btn {
-	display: inline-block;
-	background: var(--primary-gradient);
-	color: #fff;
-	padding: 0.5rem 1rem;
+	background-color: #3AC9DB; /* Solid turquoise */
+	color: #121212;
+	font-weight: bold;
+	padding: 0.5rem 1.2rem;
 	border-radius: 5px;
 	text-decoration: none;
 	margin-top: 1rem;
@@ -110,9 +184,47 @@ h2 {
 }
 
 	.btn:hover {
-		background: linear-gradient(135deg, #3AC9DB, #6D28D9); /* Gradient Reverse Effect */
+		background-color: #8B5CF6; /* Hover effect with purple */
 		transform: scale(1.05);
 	}
+
+	/* Center Align Text */
+	#about, #experience, #skills, #projects, #contact {
+		text-align: center;
+	}
+
+
+
+	/* Center Progress Bars */
+	.skill {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.progress-bar {
+		width: 60%; /* Reduced width for a cleaner look */
+	}
+
+	/* Center Project Cards */
+	.project-card {  
+	margin-left: auto;  
+	margin-right: auto;  
+	width: 80%; /* Adjust the width as needed */  
+	}
+
+	/* Center Social Buttons */
+	.socials {
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+	}
+
+#contact .socials {
+	margin-top: -20px; /* Nudges socials up */
+	margin-bottom: 3rem; /* Adds breathing room above the footer */
+}
+
 
 /* Footer */
 footer {
@@ -121,3 +233,30 @@ footer {
 	padding: 1rem 0;
 	color: #8B5CF6;
 }
+
+/* Social Media Icons */
+.btn i {
+    font-size: 1.5rem;
+    padding: 0.3rem 0.5rem;
+}
+
+.insta {
+	background-color: #E1306C;
+}
+/* Instagram Pink */
+.github {
+	background-color: #333; /* GitHub's signature dark theme */
+	color: #fff; /* White GitHub icon */
+}
+
+/* Discord Purple */
+.mail {
+	background-color: #DB4437;
+}
+/* Gmail Red */
+
+.btn:hover {
+	opacity: 0.8;
+	transform: scale(1.1); /* Slight scale-up effect on hover */
+}
+

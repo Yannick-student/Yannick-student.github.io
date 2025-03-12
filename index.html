@@ -1,19 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yannick Bouwhuis | Portfolio</title>
+    <title>Y Bouwhuis | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <link rel="icon" href="favicon.png" type="image/png">
 </head>
 <body>
+    <div id="loading-screen">
+        <div class="loader"></div>
+        <p>Loading...</p>
+    </div>
+
     <header class="hero">
         <div class="container">
             <img src="pfp.png" alt="Yannick Bouwhuis" class="profile-pic">
-            <h1>Yannick Bouwhuis</h1>
-            <p class="tagline">"Hello world :D"</p>
+            <div class="hero-title">
+                <h1>Yannick Bouwhuis</h1>
+                <p class="tagline" lang="en">"Hello world :D"</p>
+            </div>
         </div>
     </header>
+
 
     <nav class="navbar">
         <a href="#about">About Me</a>
@@ -25,19 +36,36 @@
 
     <section id="about">
         <div class="container">
-            <h2>About Me</h2>
-            <p>I'm an 18-year-old Software Engineering student from Zwolle, passionate about coding and building cool stuff! 🚀</p>
+            <h2>Over mij</h2>
+            <p>Tja... Staat hier nog niet veel wel? Doe dan voor nu maar alsof er iets interresants staat.</p>
         </div>
     </section>
 
     <section id="experience">
         <div class="container">
-            <h2>Experience</h2>
+            <h2>Ervaring</h2>
             <div class="timeline">
+
                 <div class="timeline-item">
-                    <h3>Software Engineering Student</h3>
-                    <p>Currently studying at [Your University/School Name]. Specializing in full-stack development and modern web technologies.</p>
+                    <h3>Student ICT</h3>
+                    <p>Student aan Windesheim Zwolle (Actief)</p>
                 </div>
+
+                <div class="timeline-item">
+                    <h3>Horecamedewerker</h3>
+                    <p>Keuken bij McDonalds Emmen (Actief)</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Technische dienst</h3>
+                    <p>Vakantie werk technische dienst bij Zorggroep Tangenborgh (2021 - 2024)</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>ICT Lyceum</h3>
+                    <p>ICT Lyceum (HAVO) aan Christelijke hogeschool Hondsrug College Emmen (2019 - 2023)</p>
+                </div>
+
             </div>
         </div>
     </section>
@@ -45,51 +73,62 @@
     <section id="skills">
         <div class="container">
             <h2>Skills</h2>
+
             <div class="skill">
-                <p>HTML</p>
-                <div class="progress-bar"><div style="width: 90%"></div></div>
+                <p>Object oeriented software design en development</p>
+                <div class="progress-bar"><div style="width: 100%"></div></div>
             </div>
+
             <div class="skill">
-                <p>CSS</p>
-                <div class="progress-bar"><div style="width: 85%"></div></div>
+                <p>WebDev</p>
+                <div class="progress-bar"><div style="width: 65%"></div></div>
             </div>
+
             <div class="skill">
-                <p>JavaScript</p>
-                <div class="progress-bar"><div style="width: 80%"></div></div>
+                <p>Ontwerpen</p>
+                <div class="progress-bar"><div style="width: 88%"></div></div>
             </div>
-        </div>
-    </section>
+
+            <div class="skill">
+                <p>Analyseren en documenteren</p>
+                <div class="progress-bar"><div style="width: 70%"></div></div>
+            </div>
+
+            <div class="skill">
+                <p>Teamwork (SCRUM Framework)</p>
+                <div class="progress-bar"><div style="width: 75%"></div></div>
+            </div>
+
+</section>
 
     <section id="projects">
         <div class="container">
-            <h2>Projects</h2>
-            <div class="project-card">
-                <h3>Project 1</h3>
-                <p>A cool project description goes here.</p>
-                <a href="#" class="btn">View on GitHub</a>
-            </div>
+            <h2>Projecten</h2>
 
-            <div class="project-card">
-                <h3>Project 2</h3>
-                <p>Another interesting project description goes here.</p>
-                <a href="#" class="btn">View on GitHub</a>
-            </div>
+                <div class="project-card">
+                    <h3>BierBuddy</h3>
+                    <p>Matching app op basis van drank voorkeur <br/>met planning en afspraak systeem</p>
+                    <a href="https://github.com/HiddeXA/BierBuddy" class="btn">View on GitHub</a>
+                </div>
+
         </div>
     </section>
 
     <section id="contact">
         <div class="container">
-            <h2>Contact Me</h2>
+            <h2>Neem contact met me op</h2>
             <div class="socials">
-                <a href="#" class="btn insta">Instagram</a>
-                <a href="#" class="btn discord">Discord</a>
-                <a href="mailto:yourmail@example.com" class="btn mail">Email Me</a>
+                <a href="https://www.instagram.com/yanbouw?igsh=MWZ3dW9lN28wZmp0dA==" class="btn insta"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/Yannick-student" class="btn github" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:bouwhuisyannick@gmail.com" class="btn mail"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>© 2025 Yannick Bouwhuis. All Rights Reserved.</p>
+        <p>2025 Yannick Bouwhuis</p>
     </footer>
 
     <script src="script.js"></script>
